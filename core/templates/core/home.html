@@ -1,0 +1,189 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+<section class="wizard" data-wizard>
+  <div class="frame">
+    <div class="frame-top">
+      <div class="step-dots" data-step-dots>
+        <span class="dot" data-step-dot="1"></span>
+        <span class="dot" data-step-dot="2"></span>
+        <span class="dot" data-step-dot="3"></span>
+        <span class="dot" data-step-dot="4"></span>
+        <span class="dot" data-step-dot="5"></span>
+        <span class="dot" data-step-dot="6"></span>
+        <span class="dot" data-step-dot="7"></span>
+      </div>
+    </div>
+
+    <div class="frame-body">
+      <section class="step is-active" data-step="1" data-primary-label="Empezar">
+        <div class="splash">
+          <div class="logo-orbit">
+            <div class="logo-circle">
+              <div class="logo-mark"></div>
+            </div>
+            <span class="orbit-dot dot-1"></span>
+            <span class="orbit-dot dot-2"></span>
+            <span class="orbit-dot dot-3"></span>
+            <span class="orbit-dot dot-4"></span>
+          </div>
+          <h1>BLANDY</h1>
+          <p>Entrena habilidades blandas con juegos de rol guiados.</p>
+        </div>
+      </section>
+
+      <section class="step" data-step="2" data-primary-label="Continuar">
+        <div class="step-content">
+          <h2>Acceso</h2>
+          <p>Ingresa con tu cuenta o continua como invitado.</p>
+          <div class="form-grid">
+            <label>
+              Correo
+              <input type="email" name="email" placeholder="nombre@universidad.edu" data-login-email>
+            </label>
+            <label>
+              Contrasena
+              <input type="password" name="password" placeholder="********" data-login-password>
+            </label>
+          </div>
+          <button class="link-btn" type="button" data-guest>Entrar como invitado</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="3" data-primary-label="Siguiente">
+        <div class="step-content centered">
+          <h2>Prueba</h2>
+          <p>Verifica la camara y observa como el avatar reacciona.</p>
+          <div class="practice-grid">
+            <div class="practice-card camera-card">
+              <div class="camera-view">
+                <video class="camera-feed" data-camera-feed autoplay muted playsinline></video>
+                <canvas class="mesh-canvas" data-mesh-canvas></canvas>
+                <div class="camera-status" data-camera-status>Camara apagada</div>
+              </div>
+              <div class="toggle-row">
+                <button class="toggle-btn is-on" type="button" data-toggle="mic" aria-pressed="true">Mic</button>
+                <button class="toggle-btn is-on" type="button" data-toggle="cam" aria-pressed="true">Cam</button>
+                <button class="toggle-btn" type="button" data-toggle="opts" aria-pressed="false">...</button>
+              </div>
+            </div>
+            <div class="practice-card reaction-card">
+              <div class="reaction-face" data-avatar-mood data-mood="sad">
+                <span class="reaction-eye left"></span>
+                <span class="reaction-eye right"></span>
+                <span class="reaction-mouth"></span>
+              </div>
+              <div class="reaction-label">Avatar: <span data-mood-label>Triste</span></div>
+              <p class="reaction-hint">Mueve el rostro para cambiar el estado.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="step" data-step="4" data-primary-label="Siguiente">
+        <div class="step-content">
+          <h2>Estilo</h2>
+          <p>Configura la apariencia base de tu avatar 3D.</p>
+          <div class="preview-box">Avatar 3D aqui</div>
+          <div class="option-grid">
+            <button class="option-card" type="button" data-avatar-option="skin">
+              <span>Color de piel</span>
+            </button>
+            <button class="option-card" type="button" data-avatar-option="hair">
+              <span>Cabello</span>
+            </button>
+            <button class="option-card" type="button" data-avatar-option="accessories">
+              <span>Accesorios</span>
+            </button>
+            <button class="option-card" type="button" data-avatar-option="expression">
+              <span>Expresion</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="step" data-step="5" data-primary-label="Ir a practicar">
+        <div class="step-content">
+          <h2>Vestimenta</h2>
+          <p>Viste tu avatar 3D con un item por categoria.</p>
+          <div class="preview-box">Avatar con ropa</div>
+          <div class="wardrobe-grid">
+            <div class="wardrobe-category" data-category="polo">
+              <h3>Polo</h3>
+              <div class="chip-row">
+                <button class="chip" type="button" data-item="polo-base">Base</button>
+                <button class="chip" type="button" data-item="polo-claro">Claro</button>
+                <button class="chip" type="button" data-item="polo-oscuro">Oscuro</button>
+              </div>
+            </div>
+            <div class="wardrobe-category" data-category="casaca">
+              <h3>Casaca</h3>
+              <div class="chip-row">
+                <button class="chip" type="button" data-item="casaca-ligera">Ligera</button>
+                <button class="chip" type="button" data-item="casaca-urbana">Urbana</button>
+                <button class="chip" type="button" data-item="casaca-formal">Formal</button>
+              </div>
+            </div>
+            <div class="wardrobe-category" data-category="pantalon">
+              <h3>Pantalon</h3>
+              <div class="chip-row">
+                <button class="chip" type="button" data-item="pantalon-recto">Recto</button>
+                <button class="chip" type="button" data-item="pantalon-comodo">Comodo</button>
+                <button class="chip" type="button" data-item="pantalon-urbano">Urbano</button>
+              </div>
+            </div>
+            <div class="wardrobe-category" data-category="zapatillas">
+              <h3>Zapatillas</h3>
+              <div class="chip-row">
+                <button class="chip" type="button" data-item="zapatillas-run">Run</button>
+                <button class="chip" type="button" data-item="zapatillas-urbanas">Urbanas</button>
+                <button class="chip" type="button" data-item="zapatillas-casual">Casual</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="step" data-step="6" data-primary-label="Entendido">
+        <div class="step-content centered">
+          <h2>Tu Rol</h2>
+          <div class="role-card">
+            <div class="role-title" data-role-title>Rol asignado</div>
+            <div class="role-block">
+              <div class="role-line">
+                <span class="role-icon target"></span>
+                <div>
+                  <h4>Objetivo</h4>
+                  <p data-role-objective>Objetivo del rol.</p>
+                </div>
+              </div>
+            </div>
+            <div class="role-block">
+              <div class="role-line">
+                <span class="role-icon tip"></span>
+                <div>
+                  <h4>Consejo</h4>
+                  <ul data-role-tips>
+                    <li>Consejo principal.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="step" data-step="7" data-primary-label="Volver al inicio">
+        <div class="step-content">
+          <h2>Listo para practicar</h2>
+          <p>Tu avatar esta preparado. Inicia una sesion cuando quieras.</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="frame-footer">
+      <button class="btn primary" type="button" data-primary>Empezar</button>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="page-hero-copy reveal">
+    <h1>Perfil y avatar</h1>
+    <p>Define tu identidad visual para las sesiones de roleplay.</p>
+  </div>
+</section>
+
+<section class="profile-grid">
+  <div class="profile-card reveal">
+    <div class="avatar-large">
+      <span class="avatar-ring"></span>
+      <span class="avatar-initials">LM</span>
+    </div>
+    <div class="status-list">
+      <span class="status-item">Estado: Conectado</span>
+      <span class="status-item">Rol preferido: Facilitador</span>
+      <span class="status-item">Nivel: Intermedio</span>
+    </div>
+    <button class="btn ghost" type="button">Actualizar avatar</button>
+  </div>
+
+  <div class="profile-form reveal delay-1">
+    <h2>Datos del usuario</h2>
+    <form class="stack-form">
+      <label>
+        Nombre completo
+        <input type="text" placeholder="Laura Martinez">
+      </label>
+      <label>
+        Correo
+        <input type="email" placeholder="laura@universidad.edu">
+      </label>
+      <label>
+        Carrera o curso
+        <input type="text" placeholder="Ingenieria de sistemas">
+      </label>
+      <label>
+        Objetivo principal
+        <input type="text" placeholder="Mejorar liderazgo y claridad">
+      </label>
+      <button class="btn" type="button">Guardar cambios</button>
+    </form>
+  </div>
+</section>
+
+<section class="avatar-style reveal">
+  <h2>Estilo del avatar</h2>
+  <div class="avatar-options">
+    <div class="avatar-chip">
+      <span class="chip-dot"></span>
+      <div>
+        <strong>Energia alta</strong>
+        <p>Tono visual vibrante para sesiones dinamicas.</p>
+      </div>
+    </div>
+    <div class="avatar-chip">
+      <span class="chip-dot alt"></span>
+      <div>
+        <strong>Modo enfoque</strong>
+        <p>Paleta calmada para discusiones formales.</p>
+      </div>
+    </div>
+    <div class="avatar-chip">
+      <span class="chip-dot calm"></span>
+      <div>
+        <strong>Colaborativo</strong>
+        <p>Resalta la escucha activa y la apertura.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+

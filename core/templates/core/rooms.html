@@ -1,0 +1,73 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="page-hero-copy reveal">
+    <h1>Salas de juego de rol</h1>
+    <p>Unete a simulaciones en vivo y practica habilidades blandas.</p>
+  </div>
+  <div class="page-hero-actions reveal delay-1">
+    <button class="btn" type="button">Crear sala</button>
+    <button class="btn ghost" type="button">Explorar agenda</button>
+  </div>
+</section>
+
+<section class="rooms-grid">
+  <article class="room-card reveal">
+    <div class="room-header">
+      <span class="room-tag">Proyecto final</span>
+      <span class="status-pill">6/8 en sala</span>
+    </div>
+    <h3>Defensa de propuesta</h3>
+    <p>Negocia tareas y clarifica objetivos con tu equipo.</p>
+    <div class="room-meta">
+      <span>Duracion: 35 min</span>
+      <span>Modo: Moderado</span>
+    </div>
+    <a class="btn small" href="{% url 'core:room' %}">Unirme</a>
+  </article>
+
+  <article class="room-card reveal delay-1">
+    <div class="room-header">
+      <span class="room-tag">Debate</span>
+      <span class="status-pill">4/6 en sala</span>
+    </div>
+    <h3>Evaluacion de riesgos</h3>
+    <p>Practica argumentacion, escucha activa y consenso.</p>
+    <div class="room-meta">
+      <span>Duracion: 25 min</span>
+      <span>Modo: Intenso</span>
+    </div>
+    <a class="btn small" href="{% url 'core:room' %}">Unirme</a>
+  </article>
+
+  <article class="room-card reveal delay-2">
+    <div class="room-header">
+      <span class="room-tag">Taller</span>
+      <span class="status-pill">3/5 en sala</span>
+    </div>
+    <h3>Planificacion semanal</h3>
+    <p>Coordina roles y asigna prioridades sin perder foco.</p>
+    <div class="room-meta">
+      <span>Duracion: 20 min</span>
+      <span>Modo: Guiado</span>
+    </div>
+    <a class="btn small" href="{% url 'core:room' %}">Unirme</a>
+  </article>
+
+  <article class="room-card reveal">
+    <div class="room-header">
+      <span class="room-tag">Consultoria</span>
+      <span class="status-pill">2/4 en sala</span>
+    </div>
+    <h3>Entrega de feedback</h3>
+    <p>Ejercita empatia y mensajes claros en reuniones 1:1.</p>
+    <div class="room-meta">
+      <span>Duracion: 15 min</span>
+      <span>Modo: Calmado</span>
+    </div>
+    <a class="btn small" href="{% url 'core:room' %}">Unirme</a>
+  </article>
+</section>
+{% endblock %}
+

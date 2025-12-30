@@ -1,0 +1,107 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+<section class="room-hero">
+  <div class="room-hero-copy reveal">
+    <h1>Sala de interaccion</h1>
+    <p>Proyecto final - Equipo 3 - Facilitador en vivo</p>
+  </div>
+  <div class="room-hero-actions reveal delay-1">
+    <span class="status-pill">Sesion en curso</span>
+    <button class="btn ghost" type="button">Compartir enlace</button>
+  </div>
+</section>
+
+<section class="room-layout">
+  <div class="room-stage reveal">
+    <div class="stage-header">
+      <h2>Avatares activos</h2>
+      <div class="stage-meta">
+        <span>Microfono: 4 activos</span>
+        <span>Senales: 2 alertas</span>
+      </div>
+    </div>
+    <div class="avatar-grid">
+      <div class="avatar-tile speaking">
+        <div class="avatar-badge">LM</div>
+        <div>
+          <strong>Laura</strong>
+          <p>Hablando</p>
+        </div>
+      </div>
+      <div class="avatar-tile">
+        <div class="avatar-badge">JR</div>
+        <div>
+          <strong>Javier</strong>
+          <p>Escucha activa</p>
+        </div>
+      </div>
+      <div class="avatar-tile">
+        <div class="avatar-badge">PA</div>
+        <div>
+          <strong>Paula</strong>
+          <p>Preparada</p>
+        </div>
+      </div>
+      <div class="avatar-tile alert">
+        <div class="avatar-badge">DG</div>
+        <div>
+          <strong>Diego</strong>
+          <p>Necesita turno</p>
+        </div>
+      </div>
+    </div>
+    <div class="stage-controls">
+      <button class="control">Mic</button>
+      <button class="control">Cam</button>
+      <button class="control">Senal</button>
+      <button class="control primary">Finalizar</button>
+    </div>
+  </div>
+
+  <aside class="room-panel reveal delay-1">
+    <div class="panel-block">
+      <h3>Guia en vivo</h3>
+      <ul class="guide-list">
+        <li>Resume acuerdos cada 5 minutos.</li>
+        <li>Invita a quien no ha participado.</li>
+        <li>Pregunta por riesgos antes de cerrar.</li>
+      </ul>
+    </div>
+    <div class="panel-block">
+      <h3>Metas del rol</h3>
+      <div class="goal">
+        <span class="goal-label">Claridad</span>
+        <span class="goal-bar"><span style="width: 72%"></span></span>
+      </div>
+      <div class="goal">
+        <span class="goal-label">Equidad</span>
+        <span class="goal-bar"><span style="width: 58%"></span></span>
+      </div>
+      <div class="goal">
+        <span class="goal-label">Empatia</span>
+        <span class="goal-bar"><span style="width: 66%"></span></span>
+      </div>
+    </div>
+  </aside>
+</section>
+
+<section class="room-messages reveal">
+  <h2>Mensajes de guia</h2>
+  <div class="message">
+    <span class="message-dot"></span>
+    <div>
+      <strong>Coach BLANDY</strong>
+      <p>Buen resumen. Invita a Diego a compartir su punto.</p>
+    </div>
+  </div>
+  <div class="message">
+    <span class="message-dot"></span>
+    <div>
+      <strong>Coach BLANDY</strong>
+      <p>Recuerda validar el acuerdo final antes de cerrar.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}
+

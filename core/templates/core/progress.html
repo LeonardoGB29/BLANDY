@@ -1,0 +1,58 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="page-hero-copy reveal">
+    <h1>Progreso del usuario</h1>
+    <p>Visualiza mejoras acumuladas por sesiones y metas.</p>
+  </div>
+  <div class="page-hero-actions reveal delay-1">
+    <button class="btn ghost" type="button">Comparar semanas</button>
+    <button class="btn" type="button">Nuevo objetivo</button>
+  </div>
+</section>
+
+<section class="progress-grid">
+  <div class="progress-card reveal">
+    <h3>Indicadores clave</h3>
+    <div class="progress-item">
+      <span>Participacion</span>
+      <div class="progress-bar"><span style="width: 82%"></span></div>
+      <span class="progress-value">82%</span>
+    </div>
+    <div class="progress-item">
+      <span>Claridad</span>
+      <div class="progress-bar"><span style="width: 74%"></span></div>
+      <span class="progress-value">74%</span>
+    </div>
+    <div class="progress-item">
+      <span>Colaboracion</span>
+      <div class="progress-bar"><span style="width: 88%"></span></div>
+      <span class="progress-value">88%</span>
+    </div>
+  </div>
+
+  <div class="progress-card reveal delay-1">
+    <h3>Tendencia mensual</h3>
+    <div class="trend">
+      <div class="trend-bar" style="height: 42%"></div>
+      <div class="trend-bar" style="height: 55%"></div>
+      <div class="trend-bar" style="height: 68%"></div>
+      <div class="trend-bar" style="height: 74%"></div>
+      <div class="trend-bar" style="height: 82%"></div>
+    </div>
+    <p class="trend-note">Incremento sostenido en liderazgo.</p>
+  </div>
+
+  <div class="progress-card reveal delay-2">
+    <h3>Logros recientes</h3>
+    <ul class="badge-list">
+      <li>Facilitador constante</li>
+      <li>Comunicacion precisa</li>
+      <li>Empatia en reuniones</li>
+    </ul>
+    <button class="btn small" type="button">Ver historial</button>
+  </div>
+</section>
+{% endblock %}
+

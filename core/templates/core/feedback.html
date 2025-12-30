@@ -1,0 +1,57 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="page-hero-copy reveal">
+    <h1>Feedback de la sesion</h1>
+    <p>Resumen rapido del desempeno y recomendaciones clave.</p>
+  </div>
+  <div class="page-hero-actions reveal delay-1">
+    <button class="btn" type="button">Descargar reporte</button>
+  </div>
+</section>
+
+<section class="feedback-grid">
+  <div class="score-card reveal">
+    <h3>Participacion</h3>
+    <p class="score">82%</p>
+    <span class="score-note">Mantienes un ritmo constante.</span>
+  </div>
+  <div class="score-card reveal delay-1">
+    <h3>Liderazgo</h3>
+    <p class="score">76%</p>
+    <span class="score-note">Gestionas bien el cierre de acuerdos.</span>
+  </div>
+  <div class="score-card reveal delay-2">
+    <h3>Trabajo en equipo</h3>
+    <p class="score">88%</p>
+    <span class="score-note">Apoyas intervenciones de otros.</span>
+  </div>
+</section>
+
+<section class="recommendations reveal">
+  <h2>Recomendaciones</h2>
+  <div class="recommendation">
+    <span class="rec-index">01</span>
+    <div>
+      <h4>Practica turnos claros</h4>
+      <p>Usa preguntas abiertas para invitar a quien esta en silencio.</p>
+    </div>
+  </div>
+  <div class="recommendation">
+    <span class="rec-index">02</span>
+    <div>
+      <h4>Refuerza acuerdos</h4>
+      <p>Resume decisiones y confirma responsabilidades antes de cerrar.</p>
+    </div>
+  </div>
+  <div class="recommendation">
+    <span class="rec-index">03</span>
+    <div>
+      <h4>Equilibra la energia</h4>
+      <p>Alterna intervenciones largas con pausas para preguntas.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
